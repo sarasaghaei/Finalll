@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="appDrawableBackground" format="reference"/>
+    <attr name="appBackground" format="reference|color"/>
+    <attr name="appSecondBackground" format="reference|color"/>
+    <attr name="appLinesColor" format="reference|color"/>
+    <attr name="appHitColor" format="reference|color"/>
+    <attr name="appTextTitleColor" format="reference|color"/>
+    <attr name="appTextSubTitleColor" format="reference|color"/>
+    <attr name="appTabEnableColor" format="reference|color"/>
+    <attr name="appTabDisableColor" format="reference|color"/>
+    <attr name="appTextPrimaryColor" format="reference|color"/>
+    <attr name="appTextSecondaryColor" format="reference|color"/>
+    <attr name="appCardsColor" format="reference|color"/>
+    <attr name="appCheckBoxColor" format="reference|color"/>
+    <attr name="appInputsBackground" format="reference"/>
+</resources>

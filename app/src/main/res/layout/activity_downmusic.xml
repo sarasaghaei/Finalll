@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/base_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/layou_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/btnback"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_baseline_arrow_back_24" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        style="@style/Title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_recycleview"
+        android:gravity="center_vertical"
+        android:onClick="onclick_download"
+        android:padding="10dp"
+        android:tag="https://irsv.upmusics.com/Downloads/Musics/Mojtaba%20Shoja%20%7C%20Eshghe%20Ahoorayi%20(320).mp3"
+        android:text="Ey esghe yeghane.mp3" />
+
+    <TextView
+        style="@style/Title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_recycleview"
+        android:gravity="center_vertical"
+        android:onClick="onclick_download"
+        android:padding="10dp"
+        android:tag="http://dl.moodmusic.ir/dl/music/Ebi/Ebi%20-%20Madad%20Rangi.mp3"
+        android:text="Medad rangi.mp3" />
+
+    <TextView
+        style="@style/Title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_recycleview"
+        android:gravity="center_vertical"
+        android:onClick="onclick_download"
+        android:padding="10dp"
+        android:tag="https://98music-old1.ir/data/musics/160506/473_darush-kojaye-20in-20jangale-20shab-chakavak.mp3"
+        android:text="Chakavak.mp3" />
+
+    <TextView
+        style="@style/Title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_recycleview"
+        android:gravity="center_vertical"
+        android:onClick="onclick_download"
+        android:padding="10dp"
+        android:tag="https://dls.music-fa.com/tagdl/99/Ali%20Zand%20Vakili%20-%20Fasle%20Parishani%20(128).mp3"
+        android:text="Fasle Parishani.mp3" />
+
+</LinearLayout>
+
+

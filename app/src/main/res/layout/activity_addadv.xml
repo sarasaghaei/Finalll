@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/btnback"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_baseline_arrow_back_24" />
+
+  </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                style="@style/Title"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:text="@string/selectCategory" />
+            <Spinner
+                android:id="@+id/spinner_category"
+                style="@style/Spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layoutDirection="rtl"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/shape_textview" />
+            <Spinner
+                android:id="@+id/spinner_subcategory"
+                style="@style/Spinner"
+                android:layoutDirection="rtl"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_textview" />
+            <EditText
+                android:id="@+id/et_title"
+                style="@style/TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="@string/title"
+                />
+
+            <EditText
+                android:id="@+id/et_details"
+                style="@style/TextView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="5dp"
+                android:hint="@string/details"
+                android:lines="15" />
+            <EditText
+                android:id="@+id/et_price"
+                style="@style/TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:inputType="numberSigned"
+                android:hint="@string/price" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/tv_imagepath"
+                    style="@style/TextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_weight="6" />
+
+                <Button
+                    android:id="@+id/btn_selectimage"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/shape"
+                    android:gravity="center"
+                    android:hint="@string/Select_image"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/et_tell"
+                style="@style/TextView"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:height="50dp"
+                android:hint="@string/tell"
+                android:inputType="phone"
+                android:enabled="false"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chboffer"
+                style="@style/TextView"
+                android:layout_gravity="right"
+                android:layoutDirection="rtl"
+                android:text="@string/offer"/>
+            <Button
+                android:id="@+id/btn_insert"
+                style="@style/Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/addbiyab"
+                android:onClick="Insert_record"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

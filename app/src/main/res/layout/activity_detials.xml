@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/base_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/layou_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/btnback"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_baseline_arrow_back_24" />
+
+        <TextView
+            android:id="@+id/sharing"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:background="@drawable/ic_baseline_share_24" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/slider"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:background="@drawable/shape_textview"
+                app:auto_cycle="true" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <TextView
+                    style="@style/Title"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="@string/price"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/etPrice"
+                    style="@style/Title"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="4"
+                    android:textSize="25sp" />
+
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    style="@style/CustomRatingBar"
+                    android:layout_width="14dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="10dp" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/etTitle"
+                style="@style/Title"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:hint="@string/title"
+                android:paddingTop="10dp"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/etDescription"
+                style="@style/TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/details"
+                android:lineSpacingExtra="3dp"
+                android:lines="13"
+                android:paddingTop="10dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btncall"
+                    style="@style/Button"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape"
+                    android:text="@string/call" />
+
+                <Button
+                    android:id="@+id/btnMessage"
+                    style="@style/Button"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape"
+                    android:text="@string/sendsms" />
+            </LinearLayout>
+            <TextView
+                style="@style/Title"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:paddingTop="10dp"
+                android:text="@string/similar" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recylerview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layoutDirection="rtl" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

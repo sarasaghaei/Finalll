@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layoutDirection="rtl"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/dialogicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_wifi_off_24"
+            android:layout_marginRight="10dp"
+            />
+        <TextView
+            android:id="@+id/dialogtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Title"
+            android:background="@color/colorPrimary"
+            android:layout_marginRight="10dp"
+            android:text="@string/errornotconnect"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dialogmessage"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingLeft="10dp"
+        android:text="@string/messageerrorimternet"
+        style="@style/Title"
+
+        android:lineSpacingExtra="3dp"
+        android:paddingTop="20dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layoutDirection="rtl"
+        android:padding="5dp">
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/tryagain"
+            style="@style/Button"
+            android:background="@drawable/shape_recycleview"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/closeapp"
+            style="@style/Button"
+            android:background="@drawable/shape_recycleview"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

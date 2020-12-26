@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="8dp"
+    android:layout_marginRight="5dp"
+    android:background="@drawable/shape_recycleview">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/shape"
+        android:scaleType="fitXY"
+        android:src="@drawable/image" />
+    <TextView
+        android:id="@+id/etTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:lines="2"
+        android:paddingTop="10dp"
+        style="@style/Title"
+        android:gravity="center"
+       />
+    <View
+        android:id="@+id/line_seprator"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/etPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Title"
+            android:textColor="@color/colorprice"
+            android:layout_below="@id/etTitle"
+            android:text="@string/price"
+            />
+        <TextView
+            android:id="@+id/tvt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Title"
+            android:textColor="@color/colorprice"
+            android:layout_below="@id/etTitle"
+            android:text="@string/price_unit"
+            android:paddingLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/tvid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Title"
+            android:layout_below="@id/etTitle"
+            android:visibility="invisible"
+            />
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

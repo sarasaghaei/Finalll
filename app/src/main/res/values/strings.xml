@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Biyab</string>
+    <string name="BiyabLoading">Biyab Application 1.0.0</string>
+    <string name="ErrorConnecting">خطای دسترسی به اینترنت</string>
+    <string name="home">خانه</string>
+    <string name="MyBiyab">بیاب من</string>
+    <string name="category">دسته ها</string>
+    <string-array name="spinner_item">
+        <item>کالای دیجیتال</item>
+        <item>لوازم خانه</item>
+        <item>سوپرمارکتی</item>
+    </string-array>
+    <string name="setting">تنظیمات</string>
+    <string name="selectCategory">انتخاب دسته آگهی</string>
+    <string name="Select_image">انتخاب تصویر</string>
+    <string name="title">عنوان</string>
+    <string name="details">توضیحات</string>
+    <string name="price_unit">تومان</string>
+    <string name="price">قیمت</string>
+    <string name="id">کد کالا</string>
+    <string name="tell">تماس</string>
+    <string name="addbiyab">افزودن آگهی</string>
+    <string name="offer">تخفیف ویژه</string>
+    <string name="search">جستجو در آگهی ها....</string>
+    <string name="sendsms">ارسال پیام</string>
+    <string name="call">تماس</string>
+    <string name="digi">کالای دیجیتال</string>
+    <string name="home_device">لوازم خانه</string>
+    <string name="market">سوپرمارکتی</string>
+    <string name="subcat_mobile">موبایل و تبلت</string>
+    <string name="subcat_computer">رایانه</string>
+    <string name="subcat_game">کنسول بازی</string>
+    <string name="subcat_watch">ساعت هوشمند</string>
+    <string name="subcat_lateral">لوازم جانبی</string>
+    <string name="subcat_electric">لوازم برقی</string>
+    <string name="subcat_kitchen">آشپزخانه</string>
+    <string name="subcat_sleep">لوازم خواب</string>
+    <string name="subcat_decory">دکوراسیون</string>
+    <string name="subcat_protein">پروتین</string>
+    <string name="subcat_healt">بهداشتی</string>
+    <string name="subcat_drink">آشامیدنی</string>
+    <string name="subcat_food">خوراکی</string>
+    <string name="similar">آگهی های مشابه</string>
+    <string name="title_mybiyab">برای ورود در بیاب شماره موبایل خود را وارد نمایید</string>
+    <string name="mobile">شماره موبایل</string>
+    <string name="Singin">ورود به بیاب</string>
+    <string name="location">موقعیت شما</string>
+    <string name="about">درباره ما</string>
+    <string name="nogps">عدم دسترسی به GPS</string>
+    <string name="gpsmessage">برای نمایش موقعیت خود لطفا GPS خود را روشن کنید</string>
+    <string name="title_activity_map__location">Map</string>
+    <string name="errornotconnect">خطای دسترسی به اینترنت</string>
+    <string name="tryagain">تلاش مجدد</string>
+    <string name="closeapp">رد کردن</string>
+    <string name="messageerrorimternet">ارتباط اینترنت شما برقرار نمی باشد لطفا دوباره تلاش کنید</string>
+    <string name="backgroundcolor">انتخاب رنگ زمینه</string>
+    <string name="tollbarcolor">انتخاب رنگ header</string>
+    <string name="about_final_project">پژوه پایانی دوره Android pak شعبه ونک</string>
+</resources>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="right"
+    android:orientation="vertical"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <LinearLayout
+        android:id="@+id/menu_digi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="right"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/sub_cat_digi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onclick_viewcategory"
+            android:tag="menu"
+            android:background="@drawable/ic_baseline_arrow_drop_down_24" />
+
+        <TextView
+            android:id="@+id/btn_digi"
+            style="@style/BottomSheet"
+            android:layout_height="wrap_content"
+            android:onClick="onclick_category"
+            android:text="@string/digi" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/submenu_digi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="right"
+        android:layoutDirection="rtl"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/btn_subcat_mobile"
+            style="@style/SubCategory_Bottomsheet"
+            android:layout_height="wrap_content"
+            android:onClick="onclick_subcategory"
+            android:text="@string/subcat_mobile" />
+        <TextView
+            android:id="@+id/btn_subcat_computer"
+            style="@style/SubCategory_Bottomsheet"
+            android:layout_height="wrap_content"
+            android:onClick="onclick_subcategory"
+            android:text="@string/subcat_computer" />
+        <TextView
+            android:id="@+id/btn_subcat_game"
+            style="@style/SubCategory_Bottomsheet"
+            android:layout_height="wrap_content"
+            android:onClick="onclick_subcategory"
+            android:text="@string/subcat_game" />
+        <TextView
+            android:id="@+id/btn_subcat_watch"
+            style="@style/SubCategory_Bottomsheet"
+            android:layout_height="wrap_content"
+            android:onClick="onclick_subcategory"
+            android:text="@string/subcat_watch" />
+        <TextView
+            android:id="@+id/btn_subcat_lateral"
+            style="@style/SubCategory_Bottomsheet"
+            android:layout_height="wrap_content"
+            android:onClick="onclick_subcategory"
+            android:text="@string/subcat_lateral" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/menu_home_device"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="right"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/sub_cat_home_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onclick_viewcategory"
+            android:tag="menu"
+            android:background="@drawable/ic_baseline_arrow_drop_down_24" />
+
+        <TextView
+            android:id="@+id/btn_home_device"
+            style="@style/BottomSheet"
+            android:layout_height="wrap_content"
+            android:onClick="onclick_category"
+            android:text="@string/home_device" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/submenu_home_device"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="right"
+        android:layoutDirection="rtl"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/btn_subcat_electric"
+            style="@style/SubCategory_Bottomsheet"
+            android:layout_height="wrap_content"
+            android:onClick="onclick_subcategory"
+            android:text="@string/subcat_electric" />
+        <TextView
+            android:id="@+id/btn_subcat_kitchen"
+            style="@style/SubCategory_Bottomsheet"
+            android:layout_height="wrap_content"
+            android:onClick="onclick_subcategory"
+            android:text="@string/subcat_kitchen" />
+        <TextView
+            android:id="@+id/btn_subcat_sleep"
+            style="@style/SubCategory_Bottomsheet"
+            android:layout_height="wrap_content"
+            android:onClick="onclick_subcategory"
+            android:text="@string/subcat_sleep" />
+        <TextView
+            android:id="@+id/btn_subcat_decory"
+            style="@style/SubCategory_Bottomsheet"
+            android:layout_height="wrap_content"
+            android:onClick="onclick_subcategory"
+            android:text="@string/subcat_decory" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/menu_market"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="right"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/sub_cat_market"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onclick_viewcategory"
+            android:tag="menu"
+            android:background="@drawable/ic_baseline_arrow_drop_down_24" />
+
+    <TextView
+        android:id="@+id/btn_market"
+        style="@style/BottomSheet"
+        android:layout_height="wrap_content"
+        android:onClick="onclick_category"
+        android:text="@string/market" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/submenu_market"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="right"
+        android:layoutDirection="rtl"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/btn_subcat_protein"
+            style="@style/SubCategory_Bottomsheet"
+            android:layout_height="wrap_content"
+            android:onClick="onclick_subcategory"
+            android:text="@string/subcat_protein" />
+        <TextView
+            android:id="@+id/btn_subcat_health"
+            style="@style/SubCategory_Bottomsheet"
+            android:layout_height="wrap_content"
+            android:onClick="onclick_subcategory"
+            android:text="@string/subcat_healt" />
+        <TextView
+            android:id="@+id/btn_subcat_drink"
+            style="@style/SubCategory_Bottomsheet"
+            android:layout_height="wrap_content"
+            android:onClick="onclick_subcategory"
+            android:text="@string/subcat_drink" />
+        <TextView
+            android:id="@+id/btn_subcat_food"
+            style="@style/SubCategory_Bottomsheet"
+            android:layout_height="wrap_content"
+            android:onClick="onclick_subcategory"
+            android:text="@string/subcat_food" />
+
+    </LinearLayout>
+</LinearLayout>

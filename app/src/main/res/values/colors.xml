@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fec81e</color>
+    <color name="colorPrimaryDark">#d5a200</color>
+    <color name="colorAccent">#fec81e</color>
+    <color name="colotTitle">#AE1E1E1E</color>
+    <color name="colorprice">#F44336</color>
+    <color name="colorrecycle_markety">#6BB927</color>
+</resources>

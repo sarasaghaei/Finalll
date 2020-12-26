@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="@string/setting"
+        android:id="@+id/menu_setting"
+        android:icon="@drawable/setting"/>
+    <item
+        android:title="@string/MyBiyab"
+        android:id="@+id/menu_downlode"
+        android:icon="@drawable/play_music"/>
+    <item
+        android:title="@string/category"
+        android:id="@+id/menu_category"
+        android:icon="@drawable/category"/>
+    <item
+        android:title="@string/home"
+        android:id="@+id/menu_home"
+        android:icon="@drawable/home"/>
+
+</menu>

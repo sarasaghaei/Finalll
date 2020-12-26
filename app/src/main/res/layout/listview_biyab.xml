@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="@drawable/shape_recycleview"
+    android:layout_marginTop="5dp"   >
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/image"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:scaleType="fitXY"
+        android:background="@drawable/shape"/>
+
+    <TextView
+        android:id="@+id/etTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/img"
+        android:paddingTop="10dp"
+        android:text="@string/title"
+        style="@style/Title"
+        android:lines="1"/>
+
+
+    <TextView
+        android:id="@+id/tvt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Title"
+        android:layout_below="@id/etTitle"
+        android:layout_toLeftOf="@id/etPrice"
+        android:text="@string/price_unit"
+        android:textColor="@color/colorprice"
+        />
+    <TextView
+        android:id="@+id/etPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Title"
+        android:layout_below="@id/etTitle"
+        android:layout_toLeftOf="@id/img"
+        android:text="@string/price"
+        android:textColor="@color/colorprice"
+        />
+    <TextView
+        android:id="@+id/tvid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Title"
+        android:layout_below="@id/etTitle"
+        android:visibility="invisible"
+        />
+
+
+</RelativeLayout>

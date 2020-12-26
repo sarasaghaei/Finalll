@@ -1,0 +1,158 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionBarSize">50dp</item>
+    </style>
+    <style name="AppTheme.Splash" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="TextInSplash">
+     <item name="fontFamily">@font/aristaalternate</item>
+    <item name="android:textColor">@color/colotTitle</item>
+    <item name="android:textSize">12sp</item>
+    </style>
+    <style name="ErrorText">
+    <item name="fontFamily">@font/royabold</item>
+    <item name="android:textColor">#FFFFFF</item>
+    <item name="android:textSize">14sp</item>
+</style>
+    <style name="ErrorTitele">
+        <item name="fontFamily">@font/royabold</item>
+        <item name="android:textColor">@color/colotTitle</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="MyActionBar" parent="Widget.AppCompat.Toolbar">
+        <item name="fontFamily">@font/koodakbold</item>
+        <item name="actionBarSize">50dp</item>
+        <item name="contentInsetStart">0dp</item>
+        <item name="android:textColor">@color/colotTitle</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:paddingRight">7dp</item>
+        <item name="android:paddingLeft">7dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:drawableRight">@drawable/search</item>
+        <item name="android:drawableLeft">@drawable/logo2</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="CustomRatingBar"  parent="android:style/Widget.Material.RatingBar.Small">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:numStars">5</item>
+        <item name="android:max">5</item>
+        <item name="android:transformPivotX">20dp</item>
+        <item name="android:transformPivotY">5dp</item>
+        <item name="android:stepSize">1</item>
+        <item name="android:gravity">left</item>
+        <item name="android:isIndicator">false</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+    <style name="TextView" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="height">30dp</item>
+        <item name="fontFamily">@font/roya</item>
+        <item name="color">@color/colotTitle</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:paddingRight">8dp</item>
+    </style>
+    <style name="Title" parent="TextView">
+        <item name="android:textSize">12sp</item>
+        <item name="fontFamily">@font/royabold</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="Title_menu" parent="TextView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingTop">10sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="fontFamily">@font/royabold</item>
+    </style>
+    <style name="Spinner">
+        <item name="fontFamily">@font/royabold</item>
+        <item name="color">@color/colotTitle</item>
+        <item name="android:width">200dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:popupBackground">@drawable/shape_textview</item>
+        <item name="android:dropDownHeight">70dp</item>
+        <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+        <item name="android:dropDownSelector">@color/colorPrimary</item>
+    </style>
+    <style name="Button">
+        <item name="fontFamily">@font/koodakbold</item>
+        <item name="android:layout_width">180dp</item>
+        <item name="color">@color/colotTitle</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:background">@drawable/shape</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+    <style name="imgview_mainactivity">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_margin">3dp</item>
+    </style>
+
+    <style name="MaterialDialogSheet" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowAnimationStyle">@style/MaterialDialogSheetAnimation</item>
+    </style>
+    <style name="MaterialDialogSheetAnimation">
+        <item name="android:windowEnterAnimation">@anim/show</item>
+        <item name="android:windowExitAnimation">@anim/hide</item>
+    </style>
+    <style name="BottomSheet" >
+        <item name="fontFamily">@font/negaarbold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textColor">@color/colotTitle</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_width">150dp</item>
+    </style>
+    <style name="SubCategory_Bottomsheet" >
+        <item name="fontFamily">@font/negaarbold</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textColor">@color/colotTitle</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:layout_marginTop">7dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:layout_width">150dp</item>
+    </style>
+    <style name="AlertDialogCustom" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="background">@drawable/shape_recycleview</item>
+        <item name="android:direction">right_to_left</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="fontFamily">@font/koodakbold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="padding_top">10dp</item>
+        <item name="android:layout_margin">5dp</item>
+
+    </style>
+    <!--<style name="Theme.Transparent" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>-->
+
+</resources>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="left">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/layou_toolbar"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:minHeight="?attr/actionBarSize"
+                android:gravity="center"
+                android:background="?attr/colorPrimary">
+                <EditText
+                    android:id="@+id/etSearch"
+                    style="@style/MyActionBar"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/search"
+                    android:background="@drawable/shape_actionbar"
+                    />
+            </androidx.appcompat.widget.Toolbar>
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/slider"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/shape_textview"
+                app:auto_cycle="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorrecycle_markety"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imgmarkety"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/markety" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recylerview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl" />
+            </LinearLayout>
+            <GridView
+                android:id="@+id/gridview"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginTop="5dp"
+                android:divider="@color/colorPrimary"
+                android:layoutDirection="rtl"
+                android:scrollbars="none"
+                android:numColumns="2"
+                android:padding="5dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/imgv2"
+                    style="@style/imgview_mainactivity"
+                    android:background="@drawable/imgv2"
+                    android:onClick="onclick_imgv"
+                    android:tag="imgv2"/>
+                <TextView
+                    android:id="@+id/imgv1"
+                    style="@style/imgview_mainactivity"
+                    android:background="@drawable/imgv1"
+                    android:layout_toRightOf="@id/imgv2"
+                    android:tag="imgv1"
+                    android:onClick="onclick_imgv"/>
+                <TextView
+                    android:id="@+id/imgv3"
+                    style="@style/imgview_mainactivity"
+                    android:background="@drawable/imgv3"
+                    android:layout_below="@id/imgv1"
+                    android:onClick="onclick_imgv"
+                    android:tag="imgv3"/>
+                <TextView
+                    android:id="@+id/imgv4"
+                    style="@style/imgview_mainactivity"
+                    android:background="@drawable/imgv4"
+                    android:layout_below="@id/imgv2"
+                    android:layout_toRightOf="@id/imgv3"
+                    android:onClick="onclick_imgv"
+                    android:tag="imgv4"/>
+
+            </RelativeLayout>
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="900dp"
+                android:layout_marginTop="5dp"
+                android:divider="@color/colorPrimary"
+                android:padding="5dp"
+                android:scrollbars="none"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_menu"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header_menu"
+        app:menu="@menu/navigation_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/floting3d"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/add_biyab"
+    app:layout_constraintBottom_toBottomOf="@+id/frameLayout"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.045"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.905" />
+<FrameLayout
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="1.0">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/colorPrimary"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@color/select_color"
+        app:itemTextColor="@color/select_color"
+        app:labelVisibilityMode="selected"
+
+
+        app:menu="@menu/menu" />
+</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

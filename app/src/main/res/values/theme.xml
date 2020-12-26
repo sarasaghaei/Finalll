@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+   <!-- <style name="LightTheme" parent="AppBaseTheme">
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="appBackground">@color/background</item>
+        <item name="appSecondBackground">@color/second_bg_light</item>
+        <item name="appHitColor">@color/hint_light</item>
+        <item name="appTextTitleColor">@color/black</item>
+        <item name="appTextSubTitleColor">@color/hint_light</item>
+        <item name="appTabEnableColor">@color/tab_enable</item>
+        <item name="appTabDisableColor">@color/tab_disable_light</item>
+        <item name="appTextPrimaryColor">@color/green</item>
+        <item name="appTextSecondaryColor">@color/colorAccent</item>
+        <item name="appCardsColor">@color/card_light</item>
+        <item name="appCheckBoxColor">@color/check_box_light</item>
+        <item name="appLinesColor">@color/line_light</item>
+        <item name="appInputsBackground">@drawable/shape_inputs_light</item>
+    </style>
+
+    <style name="DarkTheme" parent="BaseTheme">
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+        <item name="android:navigationBarColor">@color/second_bg_dark</item>
+        <item name="android:statusBarColor">@color/second_bg_dark</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/background_dark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="appDrawableBackground">@drawable/app_background_dark</item>
+        <item name="appBackground">@color/background_dark</item>
+        <item name="appSecondBackground">@color/second_bg_dark</item>
+        <item name="appHitColor">@color/hint_dark</item>
+        <item name="appTextTitleColor">@color/white</item>
+        <item name="appTextSubTitleColor">@color/hint_dark</item>
+        <item name="appTabEnableColor">@color/tab_enable</item>
+        <item name="appTabDisableColor">@color/tab_disable_dark</item>
+        <item name="appTextPrimaryColor">@color/green</item>
+        <item name="appTextSecondaryColor">@color/colorAccent</item>
+        <item name="appCardsColor">@color/card_dark</item>
+        <item name="appCheckBoxColor">@color/check_box_dark</item>
+        <item name="appLinesColor">@color/line_dark</item>
+        <item name="appInputsBackground">@drawable/shape_inputs_dark</item>
+    </style>-->
+
+</resources>
